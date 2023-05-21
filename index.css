@@ -405,7 +405,10 @@ em{
     }
      */
     .chatting-container{
-        max-height: calc(100vh - 215px);
+        max-height: calc(100vh - 265px);
+    }
+    .input-container{
+        bottom: 50px;
     }
     .gap-between{
         flex-direction: column;
