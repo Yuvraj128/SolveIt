@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveIt</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <div id="upper-part-header">
+                <h1 id="solveit">SolveIt</h1>
+            <a href="#login-signup-container" class="login-signup">Login/SignUp</a>
+            </div>
+        </header>
+
+        <section id="main-section">
+            <article id="main-article">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum modi inventore minima sunt quas praesentium, quibusdam, sed numquam quae fuga sapiente. Aperiam eum cumque rerum exercitationem deserunt? Tenetur mollitia quam maxime fugiat illo nesciunt iure blanditiis omnis, ipsa facere soluta voluptatum accusamus eaque reiciendis temporibus laudantium, at, ab vel.</p>
+                <!-- <p>In today's world of technology people are facing problems like workplace issues, emptiness, career pressure and many more, these are mainly faced by youngsters and working professional's at some point of time in their life.</p>
+            <p>These problems can be solved by someone's guidance and by talking to others. It is looking small but it was not. Now people are not asking for help and guidance to their known one's because of their thinking that is not understandable.</p>
+            <p>The above issue can be solved by guiding and helping others without knowing them.</p> -->
+            </article>
+        </section>
+
+        <section id="login-signup-container">
+            <div id="upper-part">
+                <div class="container-button  extra-active" id="login"  onclick="login()">Login</div>
+                <div class="container-button" id="signup"  onclick="signup()">SignUp</div>
+            </div>
+            <div class="container" id="login-show">
+                <form>
+                    <!-- <input class="input" type="email" placeholder="Email">
+                    <input class="input" type="passowrd" placeholder="Passowrd"> -->
+                    <input type="text" class="input" placeholder="Username">
+                    <button type="submit" class="container-button">Login</button>
+                </form>
+            </div>
+
+            <div class="container" id="signup-show">
+                <form action="post">
+                    <input class="input" type="text" placeholder="Username" name="username">
+                    <input class="input" type="email" placeholder="Email" name="email">
+                    <input class="input" type="passowrd" placeholder="Passowrd" name="password">
+                    <button type="submit" class="container-button">SignUp</button>
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-footer">
+                <h2 class="footer-logo">SolveIt</h2>
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ol>
+                        <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                <li><a href="#">Live</a></li>
+            <li><a href="#">Chats</a></li>
+        <li><a href="#"></a>Bench</li>
+                    </ol>
+                </div>
+                
+                <p id="copyright">copyright @2023 SolveIt</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const login_container = document.getElementById('login-show');
+        const signup_container = document.getElementById('signup-show');
+        const login_btn = document.getElementById('login');
+        const signup_btn = document.getElementById('signup');
+        
+        function login(){
+            login_container.style.display = 'block';
+            signup_container.style.display = 'none';
+
+            login_btn.classList.add('extra-active');
+            signup_btn.classList.remove('extra-active');
+        }
+        function signup(){
+            login_container.style.display = 'none';
+            signup_container.style.display = 'block';
+
+            signup_btn.classList.add('extra-active');
+            login_btn.classList.remove('extra-active');
+        }
+    </script>
+</body>
+</html>
