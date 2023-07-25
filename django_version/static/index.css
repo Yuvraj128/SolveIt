@@ -1,0 +1,423 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-container{
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    /* height: 10vh; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(54 33 33);
+    border-bottom: 2px solid rgb(54 33 33);
+    background-image: url('images/bg.png');
+    background-size: cover;
+}
+
+
+#main-section{
+    min-height: 95vh;
+    max-height: 98vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+
+/* Styling aside */
+
+nav{
+    display: block;
+    max-height: 5%;
+    width: 15vw;
+    background-color: rgb(54 33 33);
+    color: white;
+}
+
+.nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-main a{
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.gap-between{
+    font-size: 24px;
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    justify-content:center
+}
+
+.margin-r{
+    margin-right: 4px;
+}
+
+.gap-between:hover{
+    scale: 1.1;
+}
+
+/*  */
+
+.active-nav{
+    background-color: white;
+    color: rgb(54 33 33);
+}
+
+
+/* Styling aside end */
+
+
+
+#profile-show, #bench-show{
+    display: none;
+}
+
+.container-style{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.chatting-container{
+    height: calc(100vh - 147px);
+    overflow-y: auto;
+    order: 2;
+}
+
+
+
+.user-message,.chat-box{
+    font-size: 1.2rem;
+    background-color: rgb(240, 240, 240);
+    min-width: auto;
+    padding: 2px 9px 12px 9px;
+    border-radius: 35px;
+    
+}
+
+em{
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.input-container{
+    min-height: 119px;
+    width: 85vw;
+    background-color: gray;
+    order: 3;
+    /* padding: 2px; */
+    /* border: 2px solid yellow; */
+}
+
+
+#msg{
+    width: 80%;
+    height: 90%;
+    margin: 4px -3px 4px 4px;
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 13px;
+    font-size: 1.2rem;
+}
+
+
+#submit{
+    width: 10%;
+    min-width: 80px;
+    height: 90%;
+    margin: 4px 4px 4px 0;
+    background-color: rgb(240, 240, 240);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    padding: 13px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(54 33 33);
+}
+
+
+/* Chat styling */
+
+#chatter-name{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 4px;
+    padding: 0px;
+    border: 2px solid rgb(54 33 33);
+    height: fit-content;
+}
+
+.chat-box-outer{
+    position: relative;
+}
+
+.chat-box{
+    margin-bottom: 7px;
+    max-width: 70vw;
+    position: relative;
+    min-width: 120px;
+    /* min-height: 36px; */
+    /* min-width: none; */
+    /* border: 2px solid chartreuse; */
+}
+
+.chatter-name{
+    display: inline-block;
+    margin: 9px 0 0 9px;
+    color: rgb(54 33 33);
+    font-weight: 550;
+}
+
+.dusra{
+    float: left;
+}
+.apna{
+    float: right;
+}
+
+.time-dikharahe{
+    position: absolute;
+    bottom: 4px;
+    right: 24px;
+    color: rgb(54 33 33);
+}
+
+
+/* Profile show */
+
+.profile-container{
+    overflow-y: auto;
+    max-height: 100vh;
+    width: 85vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(250,250,250);
+}
+
+
+.left-part img{
+    width: 100%;
+    margin: auto;
+}
+
+.left-part figure{
+    width: 100px;
+    margin: auto;
+}
+
+
+
+.left-part>figure>figcaption{
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.buttons{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons>button{
+    margin: 0 2px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid rgb(54 33 33);
+}
+
+.buttons>button:hover{
+    background-color: white
+}
+
+.buttons>button:active{
+    background-color: rgb(54 33 33);
+    color: white;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px;
+}
+
+.spent-time>ol{
+    margin-top: 7px;
+}
+.spent-time>ol>li{
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    margin: 4px;
+    font-weight: 600;
+}
+
+.card-margin{
+    margin-top: 20px;
+}
+
+#bench-name{
+    display: block;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+}
+
+.members-container{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-columns: 12%; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: 7px;
+    height: 100px;
+}
+
+.members-container>figure{
+    /* border: 2px solid black; */
+    margin: auto;
+    cursor: pointer;
+    width: 70px;
+}
+
+.members-container>figure:hover{
+    scale: 1.1;
+
+}
+
+.members-container>figure>figcaption{
+    margin-left: 7px;
+}
+
+.members-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* Profile show ends */
+
+
+
+/* Media Queries */
+
+@media (max-width:1000px){
+    /* main-section */
+
+    .container-style{
+        width: 100vw;
+    }
+    .chatting-container{
+        width: 100vw;
+        max-height: calc(100vh - 190px);;
+    }
+    .chat-box{
+        max-width: 80vw;
+    }
+    #main-section{
+        flex-direction: column;
+    }
+
+    nav{
+        height: fit-content;
+        width: 100vw;
+    }
+
+    .nav-main{
+        flex-direction: row;
+    }
+
+    .input-container{
+        width: 100vw;
+    }
+    
+
+
+
+    /* Profile container */
+    .profile-container{
+        display: block;
+        width: 100vw;
+    }
+
+
+
+}
+@media screen and (max-width:500px){
+    /* .container-style{
+        max-height: 78vh;
+    }
+     */
+    .chatting-container{
+        max-height: calc(100vh - 265px);
+    }
+    .input-container{
+        bottom: 50px;
+    }
+    .gap-between{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #msg{
+        max-width:65vw;
+        min-width: 50vw;
+    }
+
+    #submit{
+        min-width:30vw;
+    }
+
+}
+
+@media (max-width:350px) {
+    #msg{
+        max-width: 60vw;
+    }
+}
+
+@media (max-width:298px){
+    .input-container{
+        bottom: 50px;
+        height: 40px;
+    }
+}
+
+
+/* 
+.time-dikharahe{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+} */
