@@ -420,6 +420,10 @@ em{
         min-width:30vw;
     }
 
+    .input-container{
+        bottom: 70px;
+    }
+
 }
 
 @media (max-width:350px) {
@@ -430,7 +434,6 @@ em{
 
 @media (max-width:298px){
     .input-container{
-        bottom: 50px;
         height: 40px;
     }
 }
